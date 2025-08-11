@@ -22,7 +22,7 @@
                         <a href="profile.php" class="dropdown-item has-icon">
                             <i class="far fa-user"></i> Edit Profile
                         </a>
-                        <a href="../logout.php" class="dropdown-item has-icon text-danger">
+                        <a href="./auth/logout.php" class="dropdown-item has-icon text-danger">
                             <i class="fas fa-sign-out-alt"></i> Logout
                         </a>
                     </div>

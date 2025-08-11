@@ -1,5 +1,5 @@
 <?php
-include('./admin/db_connect.php');
+include('db_connect.php');
  
 
     $categoryName=$_POST['categoryName'];
@@ -11,7 +11,7 @@ $insert = "INSERT INTO `categories`( `categName`, `describtion`) VALUES ('$categ
 $insertQuery = mysqli_query($Connect, $insert);
 
 
-  header('location: ./admin/category.php');
+  header('location: category.php');
 
 
 ?>

@@ -38,23 +38,9 @@ if (isset($_POST['save'])) {
             
         }
     }
-
+require_once('header.php');
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-
-    <link rel="icon" type="image/png" href="uploads/favicon.png">
-
-    <title>Admin Panel</title>
-
-    <?php include('links.php'); ?>
-</head>
-
-<body>
     <div id="app">
         <div class="main-wrapper">
 
@@ -138,9 +124,4 @@ if (isset($_POST['save'])) {
         </div>
     </div>
 
-    <script src="dist/js/scripts.js"></script>
-    <script src="dist/js/custom.js"></script>
-
-</body>
-
-</html>
+<?php include('footer.php'); ?>

@@ -1,6 +1,6 @@
 <?php
    session_start();
-   include('./admin/db_connect.php');
+   include('../db_connect.php');
 
    
    
@@ -22,10 +22,10 @@
           }
         $_SESSION['loginsession']=$username;
 
-        header("location:./admin/admin.php");
+        header("location:../admin.php");
         exit();
       }else{
-        header("location:./admin/login.php");
+        header("location:../login.php");
       }
     
     }

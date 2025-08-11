@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-
-    <link rel="icon" type="image/png" href="uploads/favicon.png">
-
-    <title>Admin Panel</title>
-
-    <?php include('links.php'); ?>
-</head>
-
-<body>
+<?php require_once('header.php'); ?>
     <div id="app">
         <div class="main-wrapper">
             <section class="section">
@@ -24,7 +10,7 @@
                                     <h4 class="text-center">Admin Panel Login</h4>
                                 </div>
                                 <div class="card-body card-body-auth">
-                                    <form method="POST" action="../login.php">
+                                    <form method="POST" action="auth/get_login.php">
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="username" placeholder="username" value="<?php if (isset($_COOKIE['username'])) {
                                                                                                                                         echo $_COOKIE['username'];
@@ -64,9 +50,4 @@
         </div>
     </div>
 
-    <script src="dist/js/scripts.js"></script>
-    <script src="dist/js/custom.js"></script>
-
-</body>
-
-</html>
+<?php include('footer.php'); ?>
